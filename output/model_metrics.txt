@@ -1,0 +1,54 @@
+HCV Classification Model Results
+================================
+
+Model: Logistic Regression
+Training Size: 492
+Testing Size: 123
+
+Accuracy: 0.9268
+Macro Precision: 0.6771
+Macro Recall: 0.8440
+Macro F1-Score: 0.7331
+
+Classification Report:
+                        precision    recall  f1-score   support
+
+         0=Blood Donor       0.99      0.95      0.97       107
+0s=suspect Blood Donor       0.50      1.00      0.67         1
+           1=Hepatitis       0.43      0.60      0.50         5
+            2=Fibrosis       0.67      1.00      0.80         4
+           3=Cirrhosis       0.80      0.67      0.73         6
+
+              accuracy                           0.93       123
+             macro avg       0.68      0.84      0.73       123
+          weighted avg       0.94      0.93      0.93       123
+
+Confusion Matrix:
+                        0=Blood Donor  0s=suspect Blood Donor  1=Hepatitis  2=Fibrosis  3=Cirrhosis
+0=Blood Donor                     102                       0            4           0            1
+0s=suspect Blood Donor              0                       1            0           0            0
+1=Hepatitis                         1                       0            3           1            0
+2=Fibrosis                          0                       0            0           4            0
+3=Cirrhosis                         0                       1            0           1            4
+
+Model Limitations:
+The dataset is imbalanced, and some categories have very few test samples.
+
+BONUS: MODEL COMPARISON
+==================================================
+
+Models Compared:
+1. Logistic Regression
+2. Random Forest
+
+Model Comparison Results:
+              Model  Accuracy  Macro Precision  Macro Recall  Macro F1-Score
+Logistic Regression    0.9268           0.6771        0.8440          0.7331
+      Random Forest    0.9512           0.6163        0.5867          0.6000
+
+Interpretation:
+Random Forest achieved higher accuracy (95.12%) than Logistic Regression (92.68%).
+Logistic Regression achieved a higher Macro F1-Score (73.31%) compared with Random Forest (60.00%).
+Logistic Regression also achieved higher macro recall (84.40%) than Random Forest (58.67%).
+Logistic Regression is preferred for balanced performance across categories.
+The dataset is highly imbalanced, and minority categories contain few test samples.

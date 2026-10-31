@@ -1,0 +1,33 @@
+HCV K-Means Clustering Summary
+====================================
+
+Chosen number of clusters (k): 2
+Silhouette Score: 0.5806
+
+Cluster Sizes:
+Cluster
+0     36
+1    579
+
+Cluster vs Disease Category:
+Category  0=Blood Donor  0s=suspect Blood Donor  1=Hepatitis  2=Fibrosis  3=Cirrhosis
+Cluster                                                                              
+0                     4                       6            2           1           23
+1                   529                       1           22          20            7
+
+Category Percentages Within Each Cluster:
+Category  0=Blood Donor  0s=suspect Blood Donor  1=Hepatitis  2=Fibrosis  3=Cirrhosis
+Cluster                                                                              
+0                 11.11                   16.67         5.56        2.78        63.89
+1                 91.36                    0.17         3.80        3.45         1.21
+
+Average Medical Measurements per Cluster:
+           Age    ALB    ALT     AST     GGT    CREA   PROT
+Cluster                                                    
+0        56.75  29.57  28.23  104.06  149.74  127.10  63.98
+1        46.83  42.37  28.46   30.48   32.68   78.44  72.55
+
+Interpretation:
+Cluster 0 contains older patients with lower ALB and PROT, and much higher AST, GGT, and CREA. It is dominated by cirrhosis cases, suggesting a more clinically severe group.
+Cluster 1 contains most of the blood donor records and shows more normal average laboratory values, suggesting a healthier group overall.
+The clusters do not exactly match the known disease labels, which is expected because K-Means is an unsupervised learning method.
