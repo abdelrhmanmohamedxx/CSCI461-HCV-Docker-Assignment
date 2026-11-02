@@ -4,27 +4,6 @@
 
 **HCV Dataset Analysis and Machine Learning Using Docker**
 
-## Course Information
-
-- **University:** Nile University
-- **Course:** CSCI461 - Introduction to Big Data
-- **Semester:** Fall 2026
-- **Assignment:** Assignment 1
-- **Total Marks:** 20 Marks
-
-## Team Members
-
-### Member 1
-- **Name:** Abdelrhman Mohamed
-- **Student ID:** 231000746
-- **University:** Nile University
-
-### Member 2
-- **Name:** Habiba Mohamed
-- **Student ID:** 21002055
-- **University:** Nile University
-
----
 
 ## 1. Project Description
 
