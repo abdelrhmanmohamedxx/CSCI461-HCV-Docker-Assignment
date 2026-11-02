@@ -847,15 +847,6 @@ Open `notebook/analysis.ipynb` and execute the notebook.
 
 ---
 
-## 21. Team Member Docker Hub Verification
-
-### Assigned Team Member
-
-**Name:** Habiba Mohamed
-
-**Student ID:** 21002055
-
-**University:** Nile University
 
 ### Verification Purpose
 
