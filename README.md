@@ -1,4 +1,4 @@
-# CSCI461 - Assignment 1
+
 
 ## Project Title
 
